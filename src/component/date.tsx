@@ -1,11 +1,12 @@
 import { Typography } from '@material-tailwind/react';
-import React from 'react';
-
-function Date() {
+interface Props{
+    date:string
+}
+function Date(props:Props) {
     return (
         <div>
             <Typography className='text-gray-500 font-semibold my-5' >
-                01 - 25 March 2020
+                {props.date}
             </Typography>
         </div>
     );

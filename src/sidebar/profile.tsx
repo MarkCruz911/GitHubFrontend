@@ -1,22 +1,23 @@
-import React from 'react';
-import { Avatar, Typography } from "@material-tailwind/react";
+import { Logout } from "../firebase/authProvider";
 
 function Profile() {
     return (
         <div className='flex flex-row'>
             <div className='flex items-center grid grid-row-2'>
-                <Avatar src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGfAyml4A6uSPGKH5TquQQO_hnPsnPMlcjBHVwWbbg&s' alt='avatar' className='rounded'>
-                </Avatar>
+                <img src='https://avatars.githubusercontent.com/u/85602094?v=4' alt='avatar' className='rounded h-64 w-64'/>
+                
                 <div>
-                    <Typography className='h6 text-white font-bold'>
+                    <h1 className='h6 text-white font-bold'>
                         Marco Antonio Cruz Rojas
-                    </Typography>
-                    <Typography className=' text-gray-500 font-semibold' >
+                    </h1>
+                    <h2 className=' text-gray-500 font-semibold' >
                         markcruz9111@gmail.com
-                    </Typography>
+                    </h2>
                 </div>
+                <button className="bg-red-500 text-white rounded-lg" onClick={()=>Logout()}>
+                    Logout
+                </button>
             </div>
-            
         </div>
     );
 }
