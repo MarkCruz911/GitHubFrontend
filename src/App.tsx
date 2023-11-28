@@ -17,13 +17,19 @@ import PageCommits from "./pages/pagecommits"
 import PageContribuitors from "./pages/pagecontribuitors"
 import LoginWithGoogle from "./component/loginWithGoogle"
 import PrivateRoute from "./privateRoute"
+import CardBase from "./component/cardBase"
+import TabListBase from "./component/tabListBase"
+import ChardDonuts from "./component/chardDonuts"
+import CardGridMap from "./component/cardGridMap"
+import DashboardBase from "./component/dashboardBase"
+import TablaPersonas from "./component/tablaPersonas"
 
 function App() {
   return (
     <div className="App">
     <Routes>
       <Route>  
-        <Route path="/" element={PrivateRoute()?<PageRepositories/>:<LoginWithGoogle/>}/>
+        <Route path="/" element={<PageRepositories/>}/>
         <Route path='/profile' element={<Profile/>}/>
         <Route path='/title' element={<Title title={""}/>}/>
         <Route path='/subtitle' element={<SubTitle title={""}/>}/>
@@ -37,14 +43,21 @@ function App() {
         <Route path='/listbranches' element={<ListBranches name={""} date={""}/>}/>
         <Route path='/listcommits' element={<ListCommits name={""} description={""} user={""} date={""}/>}/>
         <Route path='/contribuitor' element={<Contribuitor login={""} avatar_url={""} html_url={""}/>}/>
-        <Route path='/repositories' element={PrivateRoute()?<PageRepositories/>:<LoginWithGoogle/>}/>
-        <Route path='/branches' element={PrivateRoute()?<PageBranches/>:<LoginWithGoogle/>}/>
-        <Route path='/branches/:id' element={PrivateRoute()?<PageBranches/>:<LoginWithGoogle/>}/>
-        <Route path='/commits' element={PrivateRoute()?<PageCommits/>:<LoginWithGoogle/>}/>
-        <Route path='/commits/:id' element={PrivateRoute()?<PageCommits/>:<LoginWithGoogle/>}/>
-        <Route path='/contribuitors' element={PrivateRoute()?<PageContribuitors/>:<LoginWithGoogle/>}/>
-        <Route path='/contribuitors/:id' element={PrivateRoute()?<PageContribuitors/>:<LoginWithGoogle/>}/>
+        <Route path='/repositories' element={<PageRepositories/>}/>
+        <Route path='/branches' element={<PageBranches/>}/>
+        <Route path='/branches/:id' element={<PageBranches/>}/>
+        <Route path='/commits' element={<PageCommits/>}/>
+        <Route path='/commits/:id' element={<PageCommits/>}/>
+        <Route path='/contribuitors' element={<PageContribuitors/>}/>
+        <Route path='/contribuitors/:id' element={<PageContribuitors/>}/>
+        <Route path='/cardbase' element={<CardBase/>}/>
+        <Route path='/tablistbase' element={<TabListBase/>}/>
+        <Route path='/donuts' element={<ChardDonuts/>}/>
+        <Route path='/cardgridmap' element={<CardGridMap/>}/>
+        <Route path='/dashboardbase' element={<DashboardBase/>}/>
+        <Route path='/tablapersonas' element={<TablaPersonas/>}/>
       </Route>
+
     </Routes>
     </div>
   )
