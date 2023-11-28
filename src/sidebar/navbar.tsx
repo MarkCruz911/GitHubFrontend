@@ -3,14 +3,12 @@ import {Bars3Icon,ShareIcon,ArrowUpRightIcon,UserGroupIcon} from "@heroicons/rea
 import Profile from './profile';
 import { Link, useParams } from "react-router-dom";
 
-interface Props{
-    isRepo:string
-}
 
 
 
 
-function Navbar(props:Props) {
+
+function Navbar() {
     const {id}=useParams();
     
   return (

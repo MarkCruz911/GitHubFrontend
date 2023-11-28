@@ -1,5 +1,5 @@
 
-import { BadgeDelta, Card,Col,Grid, Flex, Metric, ProgressBar, Text } from '@tremor/react'
+import { BadgeDelta, Card,Grid, Flex, Metric, ProgressBar, Text } from '@tremor/react'
 
 const data = [
     {
