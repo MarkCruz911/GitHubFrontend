@@ -1,7 +1,6 @@
-import React, { useState, ChangeEvent, FormEvent } from 'react';
-import { Grid, Tab, TabGroup, TabList,TabPanel, TabPanels, Text, Title } from '@tremor/react';
+import { useState, ChangeEvent, FormEvent } from 'react';
+import { Tab, TabGroup, TabList,TabPanel, TabPanels} from '@tremor/react';
 import { Card } from '@material-tailwind/react';
-import TablaPersonas from './tablaPersonas';
 import TablaCriminales from './tablaCriminales';
 
 //const express = require("express");

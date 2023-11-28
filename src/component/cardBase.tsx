@@ -1,5 +1,4 @@
 import {Card, Flex, Metric, ProgressBar, Text} from '@tremor/react'
-import React from 'react';
 
 function CardBase() {
     return (

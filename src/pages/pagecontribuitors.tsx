@@ -1,13 +1,4 @@
 import Navbar from '../sidebar/navbar';
-import Title from '../component/title';
-import Pagination from '../component/pagination';
-import SubTitle from '../component/subtitle';
-import TotalUno from '../component/totaluno';
-import Contribuitor from '../component/contribuitor';
-import {useState,useEffect} from 'react';
-import axios from 'axios';
-import { useParams } from 'react-router-dom';
-import { getToken } from '../firebase/authProvider';
 import RegistroCasos from '../component/registrocasos';
 
 function PageContribuitors() {

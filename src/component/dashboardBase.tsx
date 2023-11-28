@@ -1,5 +1,4 @@
 import { Grid, Tab, TabGroup, TabList,TabPanel, TabPanels, Text, Title } from '@tremor/react';
-import React from 'react';
 import CardGridMap from './cardGridMap';
 import { Card } from '@material-tailwind/react';
 import ChardDonuts from './chardDonuts';

@@ -1,12 +1,4 @@
 import Navbar from '../sidebar/navbar';
-import ListRepositories from '../component/listRepository';
-import Title from '../component/title';
-import Pagination from '../component/pagination';
-import TotalUno from '../component/totaluno';
-import {useEffect,useState} from 'react';
-import axios from 'axios';
-import { Link } from 'react-router-dom';
-import { getToken } from '../firebase/authProvider';
 import RegistroEvidencias from '../component/registroevidencias';
 
 function PageRepositories() {
